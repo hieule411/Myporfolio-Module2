@@ -1,0 +1,221 @@
+:root {
+    --color1: #ba3888;
+    --color2: white;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    z-index: 2;
+}
+.section-title {
+    font-size: 48px;
+    padding: 10px;
+    margin: 10px 0;
+}
+.primarytitle {
+    color: var(--color1);
+    border-right: 5px solid var(--color1);
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
+}
+.secondarytitle {
+    color: var(--color2);
+}
+.sectionlayout {
+    display: flex;
+    flex-wrap: wrap;
+    background: var(--color3);
+    padding: 30px 0;
+    justify-content: left;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+    background-color: var(--color1);
+    color: var(--color2);
+
+}
+header h1 {
+    font-weight: bold;
+    font-size: 40px;
+    margin: 0;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.4);
+}
+header nav {
+    margin: 7px 0;
+    width: 100%;
+}
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    margin-bottom: 0;
+}
+header nav ul li {
+    font-size: 25px;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.4);
+    padding: 10px 15px;
+    font-weight: lighter;
+}
+@media screen and (min-width: 980px) {
+    header nav ul li a:hover {
+        background: var(--color2);
+        color: var(--color1);
+        transition: 1s;
+        border-radius: 10px;
+        padding: 15px;
+    }
+}
+header a {
+    text-decoration: none;
+    color: var(--color2);
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: var(--color3);
+    color: var(--color1);
+    justify-content: center;
+}
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    justify-content: space-around;
+    font-size: 18px;
+    width: 75%;
+}
+.contact-info a {
+    border-bottom: 2px solid var(--color1);
+    border-radius: 5px;
+    margin: 0 30px;
+}
+
+@media screen and (min-width:980px) {
+    .contactinfo a:hover {
+        background: var(--color1);
+        color: var(--color2);
+        border-radius: 10px;
+        transition: 0.5s;
+    }
+}
+.contact a {
+    text-decoration: none;
+    color: var(--color1);
+    padding: 20px;
+}
+
+.jumbotron {
+    color: var(--color3);
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 0;
+    z-index: 0;
+    padding: 250px;
+    background-color: var(--color3);
+}
+.backdrop {
+    max-width: 100%;
+    height: 675px;
+    padding: 0;
+    margin: 0 auto;
+    background-color: var(--color3);
+}
+.background {
+    position: absolute;
+    background-color: var(--color1);
+    display: block;
+    top: 0;  
+    left: 0;
+    z-index: 1;
+    max-height: 675px;
+}
+
+.info {
+    margin: 20px;
+    font-size: 18px;
+    text-align: left;
+    width: 30%;
+    line-height: 1.5;
+    font-family: 'Open Sans', sans-serif;
+}
+.picture {
+    background-image: url(../images/myoffice.webp);
+    width: 25%;
+    background-size: cover;
+    background-position: center;
+    margin-left: 50px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+.carousel {
+    width: 75%;
+}
+.carousel-control-prev, .carousel-control-next {
+    z-index: 5;
+    width: 10%;
+}
+
+.projects {
+    background: var(--color3);
+}
+.project-row {
+    margin-bottom: 15px;
+}
+#project-layout{
+    width: 75%;
+}
+#project-title {
+    width: 25%;
+}
+.col {
+    height: 250px;
+}
+.box-style {
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+    height: 100%;
+    width: 100%;
+    border-radius: 3px;
+    background-position: center;
+    background-size: cover;
+}
+.project-txt {
+    text-decoration: none;
+    color: var(--color1);
+    font-weight: bolder;
+    border-radius: 3px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+.box1 {
+    background-image: url(../assets/digital-marketing-meeting.jpg)
+}
+
+.contactinfo {
+    justify-content: center;
+    font-size: 30px;
+}
+
+.hero {
+    align-items: flex-start
+}
+
+.hero-cta {
+    line-height: 1.2;
+}
+
+
